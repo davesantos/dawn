@@ -810,6 +810,10 @@
         "logo_spin_animation": {
           "label": "Logo Spin Animation"
         },
+        "logo_spin_speed": {
+          "unit": "s",
+          "label": "Logo Spin Speed"
+        },
         "enable_sticky_header": {
           "label": "Enable sticky header",
           "info": "Header shows on the screen as customers scroll up."

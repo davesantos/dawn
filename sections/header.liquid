@@ -20,11 +20,12 @@
     margin-left: -1.2rem;
   }
 
-  {% if section.settings.logo_spin_animation %}
+  {%- assign spin_speed = section.settings.logo_spin_speed | append: 's' -%}
+  {%- if section.settings.logo_spin_animation -%}
 
   img.header__heading-logo {
     animation-name: spin;
-    animation-duration: 30s;
+    animation-duration: {{ spin_speed }};
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -38,7 +39,7 @@
     }
   }
 
-  {% endif %}
+  {%- endif -%}
 
   @media screen and (min-width: 990px) {
     header-drawer {
@@ -345,7 +346,6 @@
         </details>
       </details-modal>
     {%- endif -%}
-
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
     {%- endif -%}
@@ -735,6 +735,16 @@
       "id": "logo_spin_animation",
       "default": false,
       "label": "t:sections.header.settings.logo_spin_animation.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_spin_speed",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 30,
+      "unit": "t:sections.header.settings.logo_spin_speed.unit",
+      "label": "t:sections.header.settings.logo_spin_speed.label"
     },
     {
       "type": "link_list",
