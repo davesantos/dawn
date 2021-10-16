@@ -8,8 +8,13 @@
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
+    "heading_scale": 100,
     "type_body_font": "assistant_n4",
-    "currency_code_enabled": false,
+    "body_scale": 100,
+    "social_instagram_link": "reception.studio",
+    "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/reception_transparent.png",
+    "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
