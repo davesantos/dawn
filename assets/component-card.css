@@ -253,11 +253,13 @@
 }
 
 .card__badge {
-  bottom: 1rem;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
-  left: 1rem;
+  left: 50%;
   position: absolute;
+  transform: translateX(-50%);
+}
 }
 
 .card__badge > * {
