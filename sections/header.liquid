@@ -20,6 +20,26 @@
     margin-left: -1.2rem;
   }
 
+  {% if section.settings.logo_spin_animation %}
+
+  img.header__heading-logo {
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
+  }
+
+  {% endif %}
+
   @media screen and (min-width: 990px) {
     header-drawer {
       display: none;
@@ -272,7 +292,7 @@
               {%- endif -%}
                 <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                   <div class="field">
-                    <input class="search__input field__input" 
+                    <input class="search__input field__input"
                       id="Search-In-Modal-1"
                       type="search"
                       name="q"
@@ -288,7 +308,7 @@
                         autocorrect="off"
                         autocomplete="off"
                         autocapitalize="off"
-                        spellcheck="false" 
+                        spellcheck="false"
                       {%- endif -%}
                     >
                     <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
@@ -297,9 +317,9 @@
                       <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
                       </svg>
-                    </button> 
+                    </button>
                   </div>
-                  
+
                   {%- if settings.predictive_search_enabled -%}
                     <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
                       <div class="predictive-search__loading-state">
@@ -314,7 +334,7 @@
                 </form>
               {%- if settings.predictive_search_enabled -%}
                 </predictive-search>
-              {%- endif -%} 
+              {%- endif -%}
               <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                   <use href="#icon-close">
@@ -418,10 +438,10 @@
             <div class="search-modal__content" tabindex="-1">
               {%- if settings.predictive_search_enabled -%}
                 <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-              {%- endif -%} 
+              {%- endif -%}
                 <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                   <div class="field">
-                    <input class="search__input field__input" 
+                    <input class="search__input field__input"
                       id="Search-In-Modal"
                       type="search"
                       name="q"
@@ -437,7 +457,7 @@
                         autocorrect="off"
                         autocomplete="off"
                         autocapitalize="off"
-                        spellcheck="false" 
+                        spellcheck="false"
                       {%- endif -%}
                     >
                     <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
@@ -446,9 +466,9 @@
                       <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
                       </svg>
-                    </button> 
+                    </button>
                   </div>
-                  
+
                   {%- if settings.predictive_search_enabled -%}
                     <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
                       <div class="predictive-search__loading-state">
@@ -709,6 +729,12 @@
       ],
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_spin_animation",
+      "default": false,
+      "label": "t:sections.header.settings.logo_spin_animation.label"
     },
     {
       "type": "link_list",

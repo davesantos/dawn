@@ -807,6 +807,9 @@
         "show_line_separator": {
           "label": "Show separator line"
         },
+        "logo_spin_animation": {
+          "label": "Logo Spin Animation"
+        },
         "enable_sticky_header": {
           "label": "Enable sticky header",
           "info": "Header shows on the screen as customers scroll up."
