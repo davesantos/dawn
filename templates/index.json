@@ -29,9 +29,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/cool_cat_no1_1.jpg",
-        "image_2": "shopify:\/\/shop_images\/DSC_5190.jpg",
-        "image_height": "small",
+        "image": "shopify:\/\/shop_images\/luggageman.jpg",
+        "image_2": "shopify:\/\/shop_images\/wyatt.jpg",
+        "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": true,
