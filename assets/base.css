@@ -2301,7 +2301,6 @@ details-disclosure > details {
 
 .badge {
   border: 1px solid transparent;
-  border-radius: 4rem;
   display: inline-block;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
@@ -2330,4 +2329,3 @@ details-disclosure > details {
     stroke: CanvasText;
   }
 }
-
