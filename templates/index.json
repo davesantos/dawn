@@ -29,8 +29,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/luggageman_copy.jpg",
-        "image_2": "shopify:\/\/shop_images\/wyatt_copy.jpg",
+        "image": "shopify:\/\/shop_images\/wyatt_water.png",
+        "image_2": "shopify:\/\/shop_images\/chris.png",
         "image_height": "large",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
