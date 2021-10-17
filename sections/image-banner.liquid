@@ -79,6 +79,17 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_text_box_position }} page-width">
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'image' -%}
+          {%- assign image_size = block.settings.image_overlay_size | append: 'x' -%}
+          {%- if block.settings.image != blank -%}
+          <img class="banner__image" {{ block.shopify_attributes }} src="{{ block.settings.image | img_url: image_size }}" alt="{{ block.settings.image.alt }}" />
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+
     <div class="banner__box color-{{ section.settings.color_scheme }}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -275,13 +286,39 @@
       ]
     },
     {
-      "type": "slide",
-      "name": "Slide",
+      "type": "image",
+      "name": "Image Overlay",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_overlay_size",
+          "min": 100,
+          "max": 2000,
+          "step": 100,
+          "default": 400,
+          "unit": "x",
+          "label": "Image Size"
+        },
+        {
+          "type": "text",
+          "id": "pos_x",
+          "label": "Horizontal Position"
+        },
+        {
+          "type": "text",
+          "id": "pos_y",
+          "label": "Horizontal Vertical"
+        },
+        {
+          "type": "checkbox",
+          "id": "pos_absolute",
+          "default": false,
+          "label": "Absolute Position"
         }
       ]
     },
