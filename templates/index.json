@@ -29,9 +29,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/wyatt_water.png",
-        "image_2": "shopify:\/\/shop_images\/chris.png",
-        "image_height": "large",
+        "image": "shopify:\/\/shop_images\/jesslaying.jpg",
+        "image_2": "shopify:\/\/shop_images\/wyatthair.jpg",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": true,
