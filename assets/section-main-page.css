@@ -4,6 +4,8 @@
 
 .main-page-title {
   margin-bottom: 3rem;
+  text-indent: -9999em;
+  position: absolute;
 }
 
 @media screen and (min-width: 750px) {
