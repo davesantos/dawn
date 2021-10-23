@@ -42,8 +42,8 @@
           "logo": "shopify:\/\/shop_images\/reception_transparent.png",
           "logo_width": 100,
           "logo_position": "middle-left",
-          "logo_spin_animation": false,
-          "logo_spin_speed": 30,
+          "logo_spin_animation": true,
+          "logo_spin_speed": 40,
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true
