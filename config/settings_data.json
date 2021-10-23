@@ -42,6 +42,8 @@
           "logo": "shopify:\/\/shop_images\/reception_transparent.png",
           "logo_width": 100,
           "logo_position": "middle-left",
+          "logo_spin_animation": false,
+          "logo_spin_speed": 30,
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true
@@ -53,7 +55,7 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "",
               "menu": "footer"
             }
           },
