@@ -1,6 +1,15 @@
 
 <p>This is the image gallery</p>
 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'image' -%}
+      {%- comment -%}{%- assign image_size = block.settings.image_overlay_size | append: 'x' -%}{%- endcomment -%}
+      {%- if block.settings.image_slide != blank -%}
+      <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: 800x }}" alt="{{ block.settings.image_slide.alt }}" />
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}
 
 
 {% schema %}
@@ -15,8 +24,8 @@
         "settings": [
           {
             "type": "image_picker",
-            "id": "image",
-            "label": "Image Slide"
+            "id": "image_slide",
+            "label": "Slide"
           }
         ]
       }
