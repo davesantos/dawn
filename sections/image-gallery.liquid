@@ -3,9 +3,12 @@
   {%- case block.type -%}
     {%- when 'image' -%}
       {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
+
+      {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
       {%- if block.settings.image_slide != blank -%}
       <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
       {%- endif -%}
+      {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
   {%- endcase -%}
 {%- endfor -%}
 
@@ -35,6 +38,11 @@
             "type": "image_picker",
             "id": "image_slide",
             "label": "Slide"
+          },
+          {
+            "type": "url",
+            "id": "link_to_product",
+            "label": "URL to Product"
           }
         ]
       }
