@@ -1,12 +1,10 @@
 
-<p>This is the image gallery</p>
-
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'image' -%}
-      {%- comment -%}{%- assign image_size = block.settings.image_overlay_size | append: 'x' -%}{%- endcomment -%}
+      {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
       {%- if block.settings.image_slide != blank -%}
-      <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: 800x }}" alt="{{ block.settings.image_slide.alt }}" />
+      <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
       {%- endif -%}
   {%- endcase -%}
 {%- endfor -%}
@@ -16,7 +14,18 @@
   {
     "name": "Image Gallery",
     "tag": "section",
-    "settings": [],
+    "settings": [
+      {
+        "type": "range",
+        "id": "image_slide_size",
+        "min": 100,
+        "max": 2000,
+        "step": 100,
+        "default": 600,
+        "unit": "x",
+        "label": "Image Size"
+      }
+    ],
     "blocks": [
       {
         "type": "image",
