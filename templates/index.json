@@ -5,6 +5,9 @@
       "settings": {
       }
     },
+    "image_gallery": {
+      "type": "image-gallery"
+    },
     "rich_text": {
       "type": "rich-text",
       "disabled": true,
@@ -42,6 +45,7 @@
       }
     },
     "featured_products": {
+      "disabled": true,
       "type": "featured-collection",
       "settings": {
         "title": "",
@@ -153,6 +157,7 @@
   },
   "order": [
     "video_custom",
+    "image_gallery",
     "rich_text",
     "featured_products",
     "collage",
