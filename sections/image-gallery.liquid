@@ -1,17 +1,25 @@
-
+<div class="gallery__box">
 {%- for block in section.blocks -%}
+  <div class="gallery_row">
   {%- case block.type -%}
     {%- when 'image' -%}
       {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
-
       {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
       {%- if block.settings.image_slide != blank -%}
-      <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
+      <div class="gallery_column">
+        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
+      </div>
+      {%- endif -%}
+      {%- if block.settings.image_slide_2 != blank -%}
+      <div class="gallery_column">
+        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide_2 | img_url: image_size }}" alt="{{ block.settings.image_slide_2.alt }}" />
+      </div>
       {%- endif -%}
       {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
   {%- endcase -%}
+  </div>
 {%- endfor -%}
-
+</div>
 
 {% schema %}
   {
@@ -40,6 +48,11 @@
             "label": "Slide"
           },
           {
+            "type": "image_picker",
+            "id": "image_slide_2",
+            "label": "Slide 2"
+          },
+          {
             "type": "url",
             "id": "link_to_product",
             "label": "URL to Product"
@@ -51,4 +64,33 @@
 {% endschema %}
 
 {% stylesheet %}
+
+.gallery__box img {
+  width: 100%;
+  height: auto;
+}
+.gallery_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gallery_column {
+  display: flex
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: none;
+}
+
+
+@media screen and (min-width: 450px) {
+
+  .gallery__box img {
+    width: 60%;
+  }
+  .gallery_column {
+    flex: 1;
+  }
+}
+
 {% endstylesheet %}
