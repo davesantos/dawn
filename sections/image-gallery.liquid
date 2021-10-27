@@ -4,18 +4,19 @@
   {%- case block.type -%}
     {%- when 'image' -%}
       {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
-      {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
+
       {%- if block.settings.image_slide != blank -%}
-      <div class="gallery_column">
+        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
         <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
-      </div>
+        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
       {%- endif -%}
+
       {%- if block.settings.image_slide_2 != blank -%}
-      <div class="gallery_column">
+        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
         <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide_2 | img_url: image_size }}" alt="{{ block.settings.image_slide_2.alt }}" />
-      </div>
+        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
       {%- endif -%}
-      {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+
   {%- endcase -%}
   </div>
 {%- endfor -%}
@@ -65,32 +66,31 @@
 
 {% stylesheet %}
 
-.gallery__box img {
-  width: 100%;
-  height: auto;
-}
 .gallery_row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
-.gallery_column {
-  display: flex
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: none;
+
+.image-slide {
+  width: 100%;
+  height: auto;
 }
+
+
+
 
 
 @media screen and (min-width: 450px) {
 
-  .gallery__box img {
-    width: 60%;
+  .gallery__row > * {
+    display: inline-block;
+    flex-grow: 1;
+    width: calc(100% * (1/2));
   }
-  .gallery_column {
-    flex: 1;
-  }
+
 }
 
 {% endstylesheet %}
