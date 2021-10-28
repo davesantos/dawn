@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "image_gallery": {
+      "type": "image-gallery",
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "disabled": true,
@@ -43,6 +48,7 @@
     },
     "featured_products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "collection": "all",
@@ -50,7 +56,7 @@
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "portrait",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": false,
         "show_vendor": false,
@@ -153,6 +159,7 @@
   },
   "order": [
     "video_custom",
+    "image_gallery",
     "rich_text",
     "featured_products",
     "collage",
