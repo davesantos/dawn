@@ -11,9 +11,7 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/Wyatt_Caviar_Reception.jpg",
-            "image_slide_2": "shopify:\/\/shop_images\/CaviarSun1_ReceptionStudio.jpg",
-            "link_to_product": "shopify:\/\/products\/caviar-necklace"
+            "link_to_product": ""
           }
         }
       },
@@ -21,7 +19,7 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1"
       ],
       "settings": {
-        "image_slide_size": 600
+        "image_slide_size": 300
       }
     },
     "rich_text": {
