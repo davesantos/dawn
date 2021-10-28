@@ -1,0 +1,97 @@
+<div class="gallery__box">
+{%- for block in section.blocks -%}
+  <div class="gallery_row">
+  {%- case block.type -%}
+    {%- when 'image' -%}
+      {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
+
+      {%- if block.settings.image_slide != blank -%}
+        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
+        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
+        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+      {%- endif -%}
+
+      {%- if block.settings.image_slide_2 != blank -%}
+        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
+        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide_2 | img_url: image_size }}" alt="{{ block.settings.image_slide_2.alt }}" />
+        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+      {%- endif -%}
+
+  {%- endcase -%}
+  </div>
+{%- endfor -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Image Gallery",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "range",
+        "id": "image_slide_size",
+        "min": 100,
+        "max": 2000,
+        "step": 100,
+        "default": 600,
+        "unit": "x",
+        "label": "Image Size"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_slide",
+            "label": "Slide"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_slide_2",
+            "label": "Slide 2"
+          },
+          {
+            "type": "url",
+            "id": "link_to_product",
+            "label": "URL to Product"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+body { background: pink;  }
+
+.gallery_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery_row a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.image-slide {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 450px) {
+
+  .gallery__row > * {
+    display: inline-block;
+    flex-grow: 1;
+    width: calc(100% * (1/2));
+  }
+
+}
+
+{% endstylesheet %}
