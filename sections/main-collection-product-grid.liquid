@@ -34,9 +34,9 @@
         <div class="loading-overlay gradient"></div>
 
         <ul id="product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col negative-margin product-grid
+          grid grid--1-col negative-margin product-grid
           {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
+            {% if collection.products_count == 4 %} grid--2-col-desktop{% else %} grid--2-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %}">
           {%- for product in collection.products -%}
             <li class="grid__item">
@@ -47,7 +47,8 @@
                 add_image_padding: section.settings.add_image_padding,
                 show_vendor: section.settings.show_vendor,
                 show_image_outline: section.settings.show_image_outline,
-                show_rating: section.settings.show_rating
+                show_rating: section.settings.show_rating,
+                show_price: section.settings.show_price
               %}
             </li>
           {%- endfor -%}
@@ -129,6 +130,12 @@
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
       "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "default": true,
+      "label": "Show Price"
     },
     {
       "type": "header",
