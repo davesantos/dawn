@@ -6,7 +6,21 @@
       }
     },
     "image_gallery": {
-      "type": "image-gallery"
+      "type": "image-gallery",
+      "blocks": {
+        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
+          "type": "image",
+          "settings": {
+            "link_to_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1"
+      ],
+      "settings": {
+        "image_slide_size": 300
+      }
     },
     "rich_text": {
       "type": "rich-text",
@@ -47,6 +61,7 @@
     "featured_products": {
       "disabled": true,
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "collection": "all",
