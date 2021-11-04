@@ -1867,6 +1867,12 @@ input[type='checkbox'] {
   padding-bottom: 1rem;
 }
 
+.header .list-menu {
+
+  text-transform: uppercase;
+
+}
+
 @media screen and (min-width: 990px) {
   .header {
     padding-top: 2rem;
