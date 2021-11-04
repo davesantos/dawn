@@ -33,13 +33,14 @@
 
 </style>
 
-<div class="gallery__box">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'image' -%}
       {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
-      <div class="full" style="background-image: url('{{ block.settings.image_slide | img_url: image_size }}')"></div>
+      <div class="full" style="background-image: url('{{ block.settings.image_slide | img_url: image_size }}')">
+
       {% comment %}
+      </div>
       {%- if block.settings.image_slide != blank -%}
         {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
         <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
@@ -52,9 +53,9 @@
         {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
       {%- endif -%}
       {% endcomment %}
+    </div>
   {%- endcase -%}
 {%- endfor -%}
-</div>
 
 {% schema %}
   {
