@@ -6,7 +6,7 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception4x6.jpg",
+            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception4x6_64512414-5150-424c-9d80-32bedef01d27.jpg",
             "link_to_product": ""
           }
         }
@@ -15,7 +15,7 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1"
       ],
       "settings": {
-        "image_slide_size": 700
+        "image_slide_size": 900
       }
     },
     "rich_text": {
