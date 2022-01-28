@@ -38,8 +38,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "inverse",
-          "logo": "shopify:\/\/shop_images\/reception_transparent.png",
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/reception_logo_small_2cdf256b-36b9-4fab-b0c8-4232afe1f7a1.png",
           "logo_width": 100,
           "logo_position": "top-center",
           "logo_spin_animation": true,

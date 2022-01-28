@@ -1,10 +1,5 @@
 {
   "sections": {
-    "video_custom": {
-      "type": "video-custom",
-      "settings": {
-      }
-    },
     "image_gallery": {
       "type": "image-gallery",
       "blocks": {
@@ -59,7 +54,6 @@
       }
     },
     "featured_products": {
-      "disabled": true,
       "type": "featured-collection",
       "disabled": true,
       "settings": {
@@ -171,7 +165,6 @@
     }
   },
   "order": [
-    "video_custom",
     "image_gallery",
     "rich_text",
     "featured_products",
