@@ -18,7 +18,7 @@
         "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false,
-        "show_price": true,
+        "show_price": false,
         "enable_filtering": false,
         "enable_sorting": false,
         "collapse_on_larger_devices": false
