@@ -449,18 +449,21 @@ noscript .localization-selector.link {
     text-decoration-thickness: 0.2rem;
   }
 }
+.footer-block__details-content .list-menu__item--link {
+  font-size: calc(var(--font-body-scale) * 1.2rem );
+}
 
 @media screen and (max-width: 989px) {
   .footer-block__details-content .list-menu__item--link {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
-    font-size: 1.4rem;
   }
 
   .footer-block__details-content > :first-child .list-menu__item--link {
