@@ -6,7 +6,6 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception4x6_f1fdb65e-7952-4629-b9c3-33ca0aeb5132.jpg",
             "link_to_product": ""
           }
         }
@@ -15,43 +14,7 @@
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1"
       ],
       "settings": {
-        "image_slide_size": 900
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "image_slide_size": 300
       }
     },
     "featured_products": {
@@ -167,7 +130,6 @@
   },
   "order": [
     "image_gallery",
-    "rich_text",
     "featured_products",
     "collage",
     "video",
