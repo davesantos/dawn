@@ -1,48 +1,46 @@
 {
   "sections": {
-    "image_gallery": {
-      "type": "image-gallery",
+    "1644084328adc7d3d8": {
+      "type": "main-image-gallery",
       "blocks": {
-        "a2a591c5-7f38-43db-b71c-7c65e38ca79b": {
+        "f0ecc23d-177e-4371-a7b4-7886bf0b0353": {
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/christopher-lafonda_reception4x6.jpg",
-            "image_position": 50,
             "link_to_product": ""
           }
         },
-        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
-          "type": "image",
-          "settings": {
-            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception.jpg",
-            "link_to_product": ""
-          }
-        },
-        "beb3c5b3-d03b-4567-aff7-a43b38f1c9c7": {
+        "31f03557-4d7e-42be-929e-5f5eb599e327": {
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/jess-rave_reception4x6.jpg",
             "link_to_product": ""
           }
         },
-        "f450c080-f75e-41f3-a6bb-18f0e2d76932": {
+        "b86f1f42-b2dd-448e-878c-b99b31ddc57e": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception.jpg",
+            "link_to_product": ""
+          }
+        },
+        "193e4fe5-a7f9-40a2-8d3c-234f71e69f79": {
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/bryan-passport_reception4x6.jpg",
-            "image_position": 56,
             "link_to_product": ""
           }
         }
       },
       "block_order": [
-        "a2a591c5-7f38-43db-b71c-7c65e38ca79b",
-        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1",
-        "beb3c5b3-d03b-4567-aff7-a43b38f1c9c7",
-        "f450c080-f75e-41f3-a6bb-18f0e2d76932"
+        "f0ecc23d-177e-4371-a7b4-7886bf0b0353",
+        "31f03557-4d7e-42be-929e-5f5eb599e327",
+        "b86f1f42-b2dd-448e-878c-b99b31ddc57e",
+        "193e4fe5-a7f9-40a2-8d3c-234f71e69f79"
       ],
       "settings": {
         "swiper_autoplay": true,
-        "image_slide_size": 300
+        "image_slide_size": 600
       }
     },
     "featured_products": {
@@ -156,7 +154,7 @@
     }
   },
   "order": [
-    "image_gallery",
+    "1644084328adc7d3d8",
     "featured_products",
     "collage",
     "video",
