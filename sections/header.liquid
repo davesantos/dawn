@@ -15,6 +15,13 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+
+  {% if section.settings.home_page_only == false or request.page_type == 'index' %}
+  .header {
+    position: absolute;
+    width: 100%;
+  }
+  {% endif %}
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -354,6 +361,7 @@
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
+              draggable="false"
               loading="lazy"
               class="header__heading-logo"
               width="{{ section.settings.logo.width }}"
@@ -699,6 +707,12 @@
       "type": "image_picker",
       "id": "logo",
       "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_homepage_only",
+      "default": true,
+      "label": "Transparent Header on Home Page Only"
     },
     {
       "type": "range",

@@ -1,67 +1,143 @@
+<link
+  rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <style>
-
-.gallery__box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-}
-
-.image-slide {
-  width: 100%;
-  height: auto;
-}
-
-.full {
-  width: 100%;
-  height: 125vh;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
-@media screen and (min-width: 450px) {
-
-  .gallery__row > * {
-    display: inline-block;
-    flex-grow: 1;
-    width: calc(100% * (1/2));
+  .swiper {
+    width: 100%;
+    height: 100vh ;
+    overflow: hidden;
   }
-
-}
-
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 33%;
+  }
 </style>
 
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'image' -%}
-      {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
-      <div class="full" style="background-image: url('{{ block.settings.image_slide | img_url: image_size }}')">
+<script type="module">
+  import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-      {% comment %}
-      </div>
-      {%- if block.settings.image_slide != blank -%}
-        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
-        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
-        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
-      {%- endif -%}
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // If we need pagination
+    loop: true,
+    speed: 1000,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    centeredSlides: true,
+    {% if section.settings.swiper_autoplay %}
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    {% endif %}
 
-      {%- if block.settings.image_slide_2 != blank -%}
-        {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
-        <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide_2 | img_url: image_size }}" alt="{{ block.settings.image_slide_2.alt }}" />
-        {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
-      {%- endif -%}
-      {% endcomment %}
-    </div>
-  {%- endcase -%}
-{%- endfor -%}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+    // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+});
+</script>
+
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'image' -%}
+          {%- assign image_size = section.settings.image_slide_size | append: 'x' -%}
+          <div class="swiper-slide">
+
+            {% comment %}
+            <img {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
+            {% endcomment %}
+            <img {% if block.settings.image_position != blank %} style="object-position: {{ block.settings.image_position }};" {% endif %}
+              srcset="{%- if block.settings.image_slide.width >= 550 -%}{{ block.settings.image_slide | img_url: '550x' }} 550w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 720 -%}{{ block.settings.image_slide | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 990 -%}{{ block.settings.image_slide | img_url: '990x' }} 990w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 1100 -%}{{ block.settings.image_slide | img_url: '1100x' }} 1100w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 1500 -%}{{ block.settings.image_slide | img_url: '1500x' }} 1500w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 2200 -%}{{ block.settings.image_slide | img_url: '2200x' }} 2200w,{%- endif -%}
+                {%- if block.settings.image_slide.width >= 3000 -%}{{ block.settings.image_slide | img_url: '3000x' }} 3000w,{%- endif -%}
+                {{ block.settings.image_slide | img_url: 'master' }} {{ block.settings.image_slide.width }}w"
+              src="{{ block.settings.image_slide | img_url: '1500x' }}"
+              sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+              alt="{{ block.settings.image_slide.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image_slide.width }}"
+              height="{{ block.settings.image_slide.height }}"
+            >
+
+          {% comment %}
+          </div>
+          {%- if block.settings.image_slide != blank -%}
+            {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
+            <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide | img_url: image_size }}" alt="{{ block.settings.image_slide.alt }}" />
+            {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+          {%- endif -%}
+
+          {%- if block.settings.image_slide_2 != blank -%}
+            {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product}}">{%- endif -%}
+            <img class="image__slide" {{ block.shopify_attributes }} src="{{ block.settings.image_slide_2 | img_url: image_size }}" alt="{{ block.settings.image_slide_2.alt }}" />
+            {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+          {%- endif -%}
+          {% endcomment %}
+        </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-scrollbar"></div>
+  <div class="swiper-pagination"></div>
+
+</div>
 
 {% schema %}
+
   {
     "name": "Image Gallery",
     "tag": "section",
     "settings": [
+      {
+        "type": "checkbox",
+        "id": "swiper_autoplay",
+        "default": true,
+        "label": "Autoplay"
+      },
       {
         "type": "range",
         "id": "image_slide_size",
@@ -84,9 +160,9 @@
             "label": "Slide"
           },
           {
-            "type": "image_picker",
-            "id": "image_slide_2",
-            "label": "Slide 2"
+            "type": "text",
+            "id": "image_position",
+            "label": "Image Custom Position"
           },
           {
             "type": "url",
