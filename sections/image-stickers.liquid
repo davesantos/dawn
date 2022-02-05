@@ -1,0 +1,123 @@
+
+{%- if section.settings.is_visible -%}
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'image' -%}
+        {%- assign pos_x = block.settings.image_position_x -%}
+        {%- assign pos_y = block.settings.image_position_y -%}
+        {%- assign size = block.settings.image_size -%}
+
+          {%- if block.settings.link_to_product != blank -%}<a href="{{ block.settings.link_to_product }}">{%- endif -%}
+
+          <img
+
+            style="
+              {%- if block.settings.is_fixed -%}
+              position: fixed;
+              {%- else -%}
+              position:absolute;
+              {%- endif -%}
+              top: {{ pos_y  | append: '%'}};
+              left: {{ pos_x | append: '%'}};
+              transform: translate({{ pos_x | prepend: '-' | append: '%'}}, {{ pos_y | prepend: '-' | append: '%'}});
+              width: {{ size | append: '%' }};
+              height: auto;
+              z-index: 100;
+            "
+            srcset="{%- if block.settings.image_item.width >= 550 -%}{{ block.settings.image_item | img_url: '550x' }} 550w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 720 -%}{{ block.settings.image_item | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 990 -%}{{ block.settings.image_item | img_url: '990x' }} 990w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 1100 -%}{{ block.settings.image_item | img_url: '1100x' }} 1100w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 1500 -%}{{ block.settings.image_item | img_url: '1500x' }} 1500w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 2200 -%}{{ block.settings.image_item | img_url: '2200x' }} 2200w,{%- endif -%}
+              {%- if block.settings.image_item.width >= 3000 -%}{{ block.settings.image_item | img_url: '3000x' }} 3000w,{%- endif -%}
+              {{ block.settings.image_item | img_url: 'master' }} {{ block.settings.image_item.width }}w"
+            src="{{ block.settings.image_item | img_url: '1500x' }}"
+            sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+            alt="{{ block.settings.image_item.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image_item.width }}"
+            height="{{ block.settings.image_item.height }}"
+          >
+
+          {%- if block.settings.link_to_product != blank -%}</a>{%- endif -%}
+
+    {%- endcase -%}
+  {%- endfor -%}
+{%- endif -%}
+
+
+{% schema %}
+
+  {
+    "name": "Image Stickers",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "is_visible",
+        "default": true,
+        "label": "Show Elements"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_item",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "image_size",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "default": 100,
+            "unit": "%",
+            "label": "Size"
+          },
+          {
+            "type": "range",
+            "id": "image_position_x",
+            "min": -50,
+            "max": 150,
+            "step": 5,
+            "default": 50,
+            "unit": "%",
+            "label": "Image Horizontal Position"
+          },
+          {
+            "type": "range",
+            "id": "image_position_y",
+            "min": -50,
+            "max": 150,
+            "step": 5,
+            "default": 50,
+            "unit": "%",
+            "label": "Image Vertical Position"
+          },
+          {
+            "type": "checkbox",
+            "id": "is_fixed",
+            "default": false,
+            "label": "Fixed Image"
+          },
+          {
+            "type": "url",
+            "id": "link_to_product",
+            "label": "URL to Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Stickers"
+      }
+    ]
+  }
+{% endschema %}
