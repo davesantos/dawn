@@ -3,17 +3,44 @@
     "image_gallery": {
       "type": "image-gallery",
       "blocks": {
+        "a2a591c5-7f38-43db-b71c-7c65e38ca79b": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/christopher-lafonda_reception4x6.jpg",
+            "link_to_product": ""
+          }
+        },
         "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1": {
           "type": "image",
           "settings": {
+            "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception.jpg",
+            "link_to_product": ""
+          }
+        },
+        "beb3c5b3-d03b-4567-aff7-a43b38f1c9c7": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/jess-rave_reception4x6.jpg",
+            "link_to_product": ""
+          }
+        },
+        "f450c080-f75e-41f3-a6bb-18f0e2d76932": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/bryan-passport_reception4x6.jpg",
+            "image_position": 56,
             "link_to_product": ""
           }
         }
       },
       "block_order": [
-        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1"
+        "a2a591c5-7f38-43db-b71c-7c65e38ca79b",
+        "a88ebe82-ecaf-47c8-996b-c395a2f6a0f1",
+        "beb3c5b3-d03b-4567-aff7-a43b38f1c9c7",
+        "f450c080-f75e-41f3-a6bb-18f0e2d76932"
       ],
       "settings": {
+        "swiper_autoplay": true,
         "image_slide_size": 300
       }
     },
