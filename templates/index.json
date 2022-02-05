@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/christopher-lafonda_reception4x6.jpg",
+            "image_position": 56,
             "link_to_product": ""
           }
         },
@@ -46,7 +47,6 @@
     },
     "featured_products": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "",
         "collection": "all",
