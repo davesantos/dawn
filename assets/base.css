@@ -2008,6 +2008,8 @@ input[type='checkbox'] {
   width: 2rem;
   fill: none;
   vertical-align: middle;
+  filter: invert(100%);
+  mix-blend-mode: difference;
 }
 
 .header__icon,
