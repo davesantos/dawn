@@ -1,15 +1,7 @@
 <link
   rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <style>
-
-
-  #image-gallery.loaded {
-    opacity: 1;
-  }
-
   .swiper {
-    transition:opacity 500ms;
-    opacity: 0;
     width: 100%;
     height: 100vh ;
     overflow: hidden;
@@ -41,13 +33,12 @@
 <script type="module">
   import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
 
-  const firstSlide = Math.floor(Math.random() * 4);
   const swiper = new Swiper('.swiper', {
-    preloadImages: true,
+  // Optional parameters
+  // If we need pagination
     loop: true,
     speed: 1000,
     effect: "fade",
-    initialSlide: firstSlide,
     fadeEffect: {
       crossFade: true
     },
@@ -74,17 +65,11 @@
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-});
 
-swiper.on('imagesReady', function(){
-  console.log('images ready!');
-  const gal = document.getElementById("image-gallery");
-  gal.classList.add("loaded");
 });
-
 </script>
 
-<div id="image-gallery" class="swiper">
+<div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
