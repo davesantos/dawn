@@ -58,6 +58,13 @@
             "image_slide": "shopify:\/\/shop_images\/wyattwalking.jpg",
             "link_to_product": ""
           }
+        },
+        "f0cdc7ab-3005-4c2e-a823-543f137df5a5": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/wyattbryan.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -67,7 +74,8 @@
         "193e4fe5-a7f9-40a2-8d3c-234f71e69f79",
         "79f07b5c-d28e-4f8a-ba1b-bb6c4b0f7e79",
         "09d615ad-d34f-47db-b3f0-afdfa32d390f",
-        "e4bc115b-8dbd-42b2-ae8a-16eb726d3737"
+        "e4bc115b-8dbd-42b2-ae8a-16eb726d3737",
+        "f0cdc7ab-3005-4c2e-a823-543f137df5a5"
       ],
       "settings": {
         "swiper_autoplay": true,
