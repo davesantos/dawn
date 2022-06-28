@@ -32,13 +32,21 @@
             "image_position": 55,
             "link_to_product": ""
           }
+        },
+        "7d171651-d69c-4eb3-bd86-aba2e2ccae37": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/puppy1.png",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
         "f0ecc23d-177e-4371-a7b4-7886bf0b0353",
         "31f03557-4d7e-42be-929e-5f5eb599e327",
         "b86f1f42-b2dd-448e-878c-b99b31ddc57e",
-        "193e4fe5-a7f9-40a2-8d3c-234f71e69f79"
+        "193e4fe5-a7f9-40a2-8d3c-234f71e69f79",
+        "7d171651-d69c-4eb3-bd86-aba2e2ccae37"
       ],
       "settings": {
         "swiper_autoplay": true,
