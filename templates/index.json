@@ -73,6 +73,13 @@
             "image_slide": "shopify:\/\/shop_images\/devoteecarrotcake.jpg",
             "link_to_product": ""
           }
+        },
+        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/caviarsun.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -84,7 +91,8 @@
         "09d615ad-d34f-47db-b3f0-afdfa32d390f",
         "e4bc115b-8dbd-42b2-ae8a-16eb726d3737",
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
-        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6"
+        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
+        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745"
       ],
       "settings": {
         "swiper_autoplay": true,
