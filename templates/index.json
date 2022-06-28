@@ -54,6 +54,7 @@
         },
         "e4bc115b-8dbd-42b2-ae8a-16eb726d3737": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/wyattwalking.jpg",
             "link_to_product": ""
@@ -63,6 +64,13 @@
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/wyattbryan.jpg",
+            "link_to_product": ""
+          }
+        },
+        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/devoteecarrotcake.jpg",
             "link_to_product": ""
           }
         }
@@ -75,7 +83,8 @@
         "79f07b5c-d28e-4f8a-ba1b-bb6c4b0f7e79",
         "09d615ad-d34f-47db-b3f0-afdfa32d390f",
         "e4bc115b-8dbd-42b2-ae8a-16eb726d3737",
-        "f0cdc7ab-3005-4c2e-a823-543f137df5a5"
+        "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
+        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6"
       ],
       "settings": {
         "swiper_autoplay": true,
