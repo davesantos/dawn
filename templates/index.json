@@ -76,7 +76,7 @@
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/devoteecarrotcake.jpg",
+            "image_slide": "shopify:\/\/shop_images\/C_devoteenecklace.jpg",
             "link_to_product": ""
           }
         },
@@ -84,12 +84,6 @@
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/sarah_ravebythesea.jpg",
-            "link_to_product": ""
-          }
-        },
-        "dacf41b7-26f2-4f33-bbb6-6d1d223ba0b4": {
-          "type": "image",
-          "settings": {
             "link_to_product": ""
           }
         }
@@ -105,8 +99,7 @@
         "3068f4b6-e9af-4ab8-ac17-b38b45757e49",
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
-        "44484225-a633-43cc-9e16-d639aae56fbe",
-        "dacf41b7-26f2-4f33-bbb6-6d1d223ba0b4"
+        "44484225-a633-43cc-9e16-d639aae56fbe"
       ],
       "settings": {
         "swiper_autoplay": true,
