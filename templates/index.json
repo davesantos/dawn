@@ -41,7 +41,7 @@
         "84dfcdf5-ec3e-4916-bb6d-a28557b3e745": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/sunpearl4.jpg",
+            "image_slide": "shopify:\/\/shop_images\/sunpearl4_590cca62-f443-4e38-84b9-06e465823e9e.jpg",
             "link_to_product": ""
           }
         },
@@ -90,7 +90,6 @@
         "dacf41b7-26f2-4f33-bbb6-6d1d223ba0b4": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/waveorbitalnecklace.jpg",
             "link_to_product": ""
           }
         }
