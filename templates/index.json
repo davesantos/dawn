@@ -80,6 +80,13 @@
             "image_slide": "shopify:\/\/shop_images\/sunpearl4.jpg",
             "link_to_product": ""
           }
+        },
+        "3068f4b6-e9af-4ab8-ac17-b38b45757e49": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/devoteenecklaces.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +99,8 @@
         "e4bc115b-8dbd-42b2-ae8a-16eb726d3737",
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
-        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745"
+        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745",
+        "3068f4b6-e9af-4ab8-ac17-b38b45757e49"
       ],
       "settings": {
         "swiper_autoplay": true,
