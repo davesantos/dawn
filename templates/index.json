@@ -38,6 +38,13 @@
             "link_to_product": ""
           }
         },
+        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/sunpearl4.jpg",
+            "link_to_product": ""
+          }
+        },
         "79f07b5c-d28e-4f8a-ba1b-bb6c4b0f7e79": {
           "type": "image",
           "settings": {
@@ -52,11 +59,10 @@
             "link_to_product": ""
           }
         },
-        "e4bc115b-8dbd-42b2-ae8a-16eb726d3737": {
+        "3068f4b6-e9af-4ab8-ac17-b38b45757e49": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/wyattwalking.jpg",
+            "image_slide": "shopify:\/\/shop_images\/devoteenecklaces.jpg",
             "link_to_product": ""
           }
         },
@@ -73,20 +79,6 @@
             "image_slide": "shopify:\/\/shop_images\/devoteecarrotcake.jpg",
             "link_to_product": ""
           }
-        },
-        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745": {
-          "type": "image",
-          "settings": {
-            "image_slide": "shopify:\/\/shop_images\/sunpearl4.jpg",
-            "link_to_product": ""
-          }
-        },
-        "3068f4b6-e9af-4ab8-ac17-b38b45757e49": {
-          "type": "image",
-          "settings": {
-            "image_slide": "shopify:\/\/shop_images\/devoteenecklaces.jpg",
-            "link_to_product": ""
-          }
         }
       },
       "block_order": [
@@ -94,13 +86,12 @@
         "31f03557-4d7e-42be-929e-5f5eb599e327",
         "b86f1f42-b2dd-448e-878c-b99b31ddc57e",
         "193e4fe5-a7f9-40a2-8d3c-234f71e69f79",
+        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745",
         "79f07b5c-d28e-4f8a-ba1b-bb6c4b0f7e79",
         "09d615ad-d34f-47db-b3f0-afdfa32d390f",
-        "e4bc115b-8dbd-42b2-ae8a-16eb726d3737",
+        "3068f4b6-e9af-4ab8-ac17-b38b45757e49",
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
-        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
-        "84dfcdf5-ec3e-4916-bb6d-a28557b3e745",
-        "3068f4b6-e9af-4ab8-ac17-b38b45757e49"
+        "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6"
       ],
       "settings": {
         "swiper_autoplay": true,
