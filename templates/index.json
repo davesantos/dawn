@@ -61,6 +61,7 @@
         },
         "3068f4b6-e9af-4ab8-ac17-b38b45757e49": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/devoteenecklaces.jpg",
             "link_to_product": ""
@@ -68,6 +69,7 @@
         },
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/wyattbryan_429f9bac-3595-45e8-b510-cbe911b32999.jpg",
             "link_to_product": ""
