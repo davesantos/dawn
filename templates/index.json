@@ -78,6 +78,7 @@
         },
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/C_devoteenecklace.jpg",
             "link_to_product": ""
