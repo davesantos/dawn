@@ -47,6 +47,7 @@
         },
         "79f07b5c-d28e-4f8a-ba1b-bb6c4b0f7e79": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/Rave4jess_3cfe4f49-45a6-4d41-8161-b596d07ec120.jpg",
             "link_to_product": ""
