@@ -88,6 +88,13 @@
             "image_slide": "shopify:\/\/shop_images\/sarah.jpg",
             "link_to_product": ""
           }
+        },
+        "3d9899d3-276a-4f26-8275-1a7f31321933": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/IMG_2921.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -101,7 +108,8 @@
         "3068f4b6-e9af-4ab8-ac17-b38b45757e49",
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
-        "44484225-a633-43cc-9e16-d639aae56fbe"
+        "44484225-a633-43cc-9e16-d639aae56fbe",
+        "3d9899d3-276a-4f26-8275-1a7f31321933"
       ],
       "settings": {
         "swiper_autoplay": true,
