@@ -40,6 +40,7 @@
         },
         "84dfcdf5-ec3e-4916-bb6d-a28557b3e745": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/sunpearl4_590cca62-f443-4e38-84b9-06e465823e9e.jpg",
             "link_to_product": ""
@@ -86,6 +87,7 @@
         },
         "44484225-a633-43cc-9e16-d639aae56fbe": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/sarah.jpg",
             "link_to_product": ""
