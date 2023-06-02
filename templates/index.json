@@ -94,6 +94,13 @@
             "link_to_product": ""
           }
         },
+        "e9118e0c-981b-448e-b7c0-4f786a66a269": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/IMG_6603copy.heic",
+            "link_to_product": ""
+          }
+        },
         "3d9899d3-276a-4f26-8275-1a7f31321933": {
           "type": "image",
           "settings": {
@@ -121,6 +128,7 @@
         "f0cdc7ab-3005-4c2e-a823-543f137df5a5",
         "7b7596f6-09ef-4bd2-8880-f8c0c0346fe6",
         "44484225-a633-43cc-9e16-d639aae56fbe",
+        "e9118e0c-981b-448e-b7c0-4f786a66a269",
         "3d9899d3-276a-4f26-8275-1a7f31321933",
         "9358dbaa-0acd-4290-99b0-b973c393c2c2"
       ],
