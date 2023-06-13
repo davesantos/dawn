@@ -68,20 +68,11 @@
               "heading": "Heading",
               "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
-          },
-          "f6218508-e024-4a5b-9420-147d702a54ab": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/reader1.gif",
-              "image_width": 190,
-              "alignment": "center"
-            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1",
-          "f6218508-e024-4a5b-9420-147d702a54ab"
+          "footer-1"
         ],
         "settings": {
           "color_scheme": "background-1",
