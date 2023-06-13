@@ -73,7 +73,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/reader1.gif",
-              "image_width": 200,
+              "image_width": 190,
               "alignment": "center"
             }
           }
