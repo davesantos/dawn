@@ -117,6 +117,7 @@
         },
         "bd9a4eb4-c416-4e2d-abbd-88b3d08fcd4e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/temporary_fantasy_flyer.jpg",
             "link_to_product": ""
