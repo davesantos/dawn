@@ -114,6 +114,13 @@
             "image_slide": "shopify:\/\/shop_images\/IMG_2923.jpg",
             "link_to_product": ""
           }
+        },
+        "bd9a4eb4-c416-4e2d-abbd-88b3d08fcd4e": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/temporary_fantasy_flyer.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -130,7 +137,8 @@
         "44484225-a633-43cc-9e16-d639aae56fbe",
         "e9118e0c-981b-448e-b7c0-4f786a66a269",
         "3d9899d3-276a-4f26-8275-1a7f31321933",
-        "9358dbaa-0acd-4290-99b0-b973c393c2c2"
+        "9358dbaa-0acd-4290-99b0-b973c393c2c2",
+        "bd9a4eb4-c416-4e2d-abbd-88b3d08fcd4e"
       ],
       "settings": {
         "swiper_autoplay": true,
