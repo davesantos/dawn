@@ -23,7 +23,6 @@
         },
         "b86f1f42-b2dd-448e-878c-b99b31ddc57e": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/wyatt-caviar_reception.jpg",
             "link_to_product": ""
