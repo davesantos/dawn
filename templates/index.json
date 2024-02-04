@@ -125,6 +125,7 @@
         },
         "9edf62e1-ffdb-413f-8aaa-71ff63d019d1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/IMG_7607.jpg",
             "link_to_product": ""
