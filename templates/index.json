@@ -143,17 +143,17 @@
             "link_to_product": ""
           }
         },
-        "image_4yCWkk": {
-          "type": "image",
-          "settings": {
-            "image_slide": "shopify:\/\/shop_images\/chaingrey.jpg",
-            "link_to_product": ""
-          }
-        },
         "image_pNVCMe": {
           "type": "image",
           "settings": {
             "image_slide": "shopify:\/\/shop_images\/CHAMBERSEXPOT_TABLE.jpg",
+            "link_to_product": ""
+          }
+        },
+        "image_4yCWkk": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/chaingrey.jpg",
             "link_to_product": ""
           }
         }
@@ -175,8 +175,8 @@
         "9358dbaa-0acd-4290-99b0-b973c393c2c2",
         "bd9a4eb4-c416-4e2d-abbd-88b3d08fcd4e",
         "9edf62e1-ffdb-413f-8aaa-71ff63d019d1",
-        "image_4yCWkk",
-        "image_pNVCMe"
+        "image_pNVCMe",
+        "image_4yCWkk"
       ],
       "settings": {
         "swiper_autoplay": true,
