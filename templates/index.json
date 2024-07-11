@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1644084328adc7d3d8": {
@@ -140,6 +149,13 @@
             "image_slide": "shopify:\/\/shop_images\/chaingrey.jpg",
             "link_to_product": ""
           }
+        },
+        "image_pNVCMe": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify:\/\/shop_images\/CHAMBERSEXPOT_TABLE.jpg",
+            "link_to_product": ""
+          }
         }
       },
       "block_order": [
@@ -159,7 +175,8 @@
         "9358dbaa-0acd-4290-99b0-b973c393c2c2",
         "bd9a4eb4-c416-4e2d-abbd-88b3d08fcd4e",
         "9edf62e1-ffdb-413f-8aaa-71ff63d019d1",
-        "image_4yCWkk"
+        "image_4yCWkk",
+        "image_pNVCMe"
       ],
       "settings": {
         "swiper_autoplay": true,
