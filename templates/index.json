@@ -21,12 +21,14 @@
         },
         "image_cTthT8": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "link_to_product": ""
           }
         },
         "image_8GYYLP": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "link_to_product": ""
           }
