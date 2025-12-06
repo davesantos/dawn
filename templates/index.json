@@ -12,8 +12,16 @@
     "1644084328adc7d3d8": {
       "type": "main-image-gallery",
       "blocks": {
+        "image_BGNiHD": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify://shop_images/Photoroom_20251205_183904_2.jpg",
+            "link_to_product": ""
+          }
+        },
         "image_t3MdMC": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_slide": "shopify://shop_images/Photoroom_20251205_183904.jpg",
             "link_to_product": ""
@@ -197,6 +205,7 @@
         }
       },
       "block_order": [
+        "image_BGNiHD",
         "image_t3MdMC",
         "image_QQgYUG",
         "image_PFMPGf",
