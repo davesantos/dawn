@@ -12,6 +12,20 @@
     "1644084328adc7d3d8": {
       "type": "main-image-gallery",
       "blocks": {
+        "image_QQgYUG": {
+          "type": "image",
+          "settings": {
+            "image_slide": "shopify://shop_images/bondedpairgreen.jpg",
+            "link_to_product": ""
+          }
+        },
+        "image_PFMPGf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link_to_product": ""
+          }
+        },
         "image_cTthT8": {
           "type": "image",
           "disabled": true,
@@ -175,6 +189,8 @@
         }
       },
       "block_order": [
+        "image_QQgYUG",
+        "image_PFMPGf",
         "image_cTthT8",
         "image_8GYYLP",
         "f0ecc23d-177e-4371-a7b4-7886bf0b0353",
